@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-10-22)
+## Unreleased (2024-10-25)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`85a6c6a`](https://github.com/stdlib-js/stdlib/commit/85a6c6a051660cab231134b7043796cff7ca1f2c) - **build:** update compiler flags and export resolution _(by Athan Reines)_
 -   [`243f857`](https://github.com/stdlib-js/stdlib/commit/243f85723b0b899c6cedcac0271f707bebdad918) - **feat:** add `blas/base/snrm2-wasm` [(#3029)](https://github.com/stdlib-js/stdlib/pull/3029) _(by Aman Bhansali, Athan Reines)_
 
 </details>
