@@ -35,38 +35,32 @@ limitations under the License.
 
 > Calculate the L2-norm of a single-precision floating-point vector.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/blas-base-snrm2-wasm
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-snrm2 = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-snrm2-wasm@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var snrm2 = require( 'path/to/vendor/umd/blas-base-snrm2-wasm/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-snrm2-wasm@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.snrm2;
-})();
-</script>
+var snrm2 = require( '@stdlib/blas-base-snrm2-wasm' );
 ```
 
 #### snrm2.main( N, x, strideX )
@@ -200,7 +194,7 @@ var dtype = 'float32';
 // Specify a vector length:
 var N = 5;
 
-// Define pointer (i.e., byte offsets) for storing the input vector:
+// Define a pointer (i.e., byte offset) for storing the input vector:
 var xptr = 0;
 
 // Write vector values to module memory:
@@ -246,7 +240,7 @@ var dtype = 'float32';
 // Specify a vector length:
 var N = 5;
 
-// Define pointer (i.e., byte offsets) for storing the input vector:
+// Define a pointer (i.e., byte offset) for storing the input vector:
 var xptr = 0;
 
 // Write vector values to module memory:
@@ -287,14 +281,9 @@ The function has the following additional parameters:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-snrm2-wasm@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
+var snrm2 = require( '@stdlib/blas-base-snrm2-wasm' );
 
 var opts = {
     'dtype': 'float32'
@@ -304,11 +293,6 @@ console.log( x );
 
 var out = snrm2.ndarray( x.length, x, 1, 0 );
 console.log( out );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -401,13 +385,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [mdn-typed-array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray
 
-[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32/tree/umd
+[@stdlib/array/float32]: https://github.com/stdlib-js/array-float32
 
-[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory/tree/umd
+[@stdlib/wasm/memory]: https://github.com/stdlib-js/wasm-memory
 
-[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper/tree/umd
+[@stdlib/wasm/module-wrapper]: https://github.com/stdlib-js/wasm-module-wrapper
 
-[@stdlib/blas/base/snrm2]: https://github.com/stdlib-js/blas-base-snrm2/tree/umd
+[@stdlib/blas/base/snrm2]: https://github.com/stdlib-js/blas-base-snrm2
 
 </section>
 
