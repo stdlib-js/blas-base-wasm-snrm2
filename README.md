@@ -42,13 +42,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-snrm2/tags). For example,
+
+```javascript
 import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@v0.0.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@v0.0.0-esm/index.mjs';
+import { Module } from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@esm/index.mjs';
 ```
 
 #### snrm2.main( N, x, strideX )
@@ -276,7 +281,7 @@ The function has the following additional parameters:
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
-import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@v0.0.0-esm/index.mjs';
+import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
