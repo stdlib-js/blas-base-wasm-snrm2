@@ -40,7 +40,7 @@ limitations under the License.
 ## Installation
 
 ```bash
-npm install @stdlib/blas-base-snrm2-wasm
+npm install @stdlib/blas-base-wasm-snrm2
 ```
 
 Alternatively,
@@ -60,7 +60,7 @@ To view installation and usage instructions specific to each branch build, be su
 ## Usage
 
 ```javascript
-var snrm2 = require( '@stdlib/blas-base-snrm2-wasm' );
+var snrm2 = require( '@stdlib/blas-base-wasm-snrm2' );
 ```
 
 #### snrm2.main( N, x, strideX )
@@ -283,7 +283,7 @@ The function has the following additional parameters:
 
 ```javascript
 var discreteUniform = require( '@stdlib/random-array-discrete-uniform' );
-var snrm2 = require( '@stdlib/blas-base-snrm2-wasm' );
+var snrm2 = require( '@stdlib/blas-base-wasm-snrm2' );
 
 var opts = {
     'dtype': 'float32'
@@ -333,7 +333,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -343,19 +343,19 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-snrm2-wasm.svg
-[npm-url]: https://npmjs.org/package/@stdlib/blas-base-snrm2-wasm
+[npm-image]: http://img.shields.io/npm/v/@stdlib/blas-base-wasm-snrm2.svg
+[npm-url]: https://npmjs.org/package/@stdlib/blas-base-wasm-snrm2
 
-[test-image]: https://github.com/stdlib-js/blas-base-snrm2-wasm/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/blas-base-snrm2-wasm/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/blas-base-wasm-snrm2/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/blas-base-wasm-snrm2/actions/workflows/test.yml?query=branch:main
 
-[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-snrm2-wasm/main.svg
-[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-snrm2-wasm?branch=main
+[coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/blas-base-wasm-snrm2/main.svg
+[coverage-url]: https://codecov.io/github/stdlib-js/blas-base-wasm-snrm2?branch=main
 
 <!--
 
-[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-snrm2-wasm.svg
-[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-snrm2-wasm/main
+[dependencies-image]: https://img.shields.io/david/stdlib-js/blas-base-wasm-snrm2.svg
+[dependencies-url]: https://david-dm.org/stdlib-js/blas-base-wasm-snrm2/main
 
 -->
 
@@ -369,15 +369,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [umd]: https://github.com/umdjs/umd
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
-[deno-url]: https://github.com/stdlib-js/blas-base-snrm2-wasm/tree/deno
-[deno-readme]: https://github.com/stdlib-js/blas-base-snrm2-wasm/blob/deno/README.md
-[umd-url]: https://github.com/stdlib-js/blas-base-snrm2-wasm/tree/umd
-[umd-readme]: https://github.com/stdlib-js/blas-base-snrm2-wasm/blob/umd/README.md
-[esm-url]: https://github.com/stdlib-js/blas-base-snrm2-wasm/tree/esm
-[esm-readme]: https://github.com/stdlib-js/blas-base-snrm2-wasm/blob/esm/README.md
-[branches-url]: https://github.com/stdlib-js/blas-base-snrm2-wasm/blob/main/branches.md
+[deno-url]: https://github.com/stdlib-js/blas-base-wasm-snrm2/tree/deno
+[deno-readme]: https://github.com/stdlib-js/blas-base-wasm-snrm2/blob/deno/README.md
+[umd-url]: https://github.com/stdlib-js/blas-base-wasm-snrm2/tree/umd
+[umd-readme]: https://github.com/stdlib-js/blas-base-wasm-snrm2/blob/umd/README.md
+[esm-url]: https://github.com/stdlib-js/blas-base-wasm-snrm2/tree/esm
+[esm-readme]: https://github.com/stdlib-js/blas-base-wasm-snrm2/blob/esm/README.md
+[branches-url]: https://github.com/stdlib-js/blas-base-wasm-snrm2/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-snrm2-wasm/main/LICENSE
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/blas-base-wasm-snrm2/main/LICENSE
 
 [blas]: http://www.netlib.org/blas
 

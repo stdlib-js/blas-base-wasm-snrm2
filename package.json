@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/blas-base-snrm2-wasm",
+  "name": "@stdlib/blas-base-wasm-snrm2",
   "version": "0.0.0",
   "description": "Calculate the L2-norm of a single-precision floating-point vector.",
   "license": "Apache-2.0",
@@ -36,7 +36,7 @@
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
-    "url": "git://github.com/stdlib-js/blas-base-snrm2-wasm.git"
+    "url": "git://github.com/stdlib-js/blas-base-wasm-snrm2.git"
   },
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"
@@ -47,7 +47,7 @@
     "@stdlib/fs-read-wasm": "^0.2.2",
     "@stdlib/strided-base-stride2offset": "^0.1.0",
     "@stdlib/string-format": "^0.2.2",
-    "@stdlib/types": "^0.4.1",
+    "@stdlib/types": "^0.4.3",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.2.2",
     "@stdlib/utils-inherit": "^0.2.2",
     "@stdlib/utils-library-manifest": "^0.2.2",
