@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@deno/mod.js';
+import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@v0.1.0-deno/mod.js';
 ```
 
 #### snrm2.main( N, x, strideX )
@@ -265,7 +265,7 @@ The function has the following additional parameters:
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
-import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@deno/mod.js';
+import snrm2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-snrm2@v0.1.0-deno/mod.js';
 
 var opts = {
     'dtype': 'float32'
