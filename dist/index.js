@@ -1,76 +1,11 @@
+"use strict";var u=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(t){throw (r=0, t)}};};var y=u(function(G,d){
+var b=require("path").resolve,R=require('@stdlib/fs-read-wasm/dist').sync,W=R(b(__dirname,"..","src","main.wasm"));d.exports=W
+});var v=u(function(H,f){
+var A=require('@stdlib/assert-is-wasm-memory/dist'),q=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),O=require('@stdlib/utils-inherit/dist'),m=require('@stdlib/wasm-module-wrapper/dist'),S=require('@stdlib/error-tools-fmtprodmsg/dist'),g=y();function n(e){if(!(this instanceof n))return new n(e);if(!A(e))throw new TypeError(S('271H0',e));return m.call(this,g,e,{env:{memory:e}}),this}O(n,m);q(n.prototype,"main",function(r,t,i){return this._instance.exports.c_snrm2(r,t,i)});q(n.prototype,"ndarray",function(r,t,i,o){return this._instance.exports.c_snrm2_ndarray(r,t,i,o)});f.exports=n
+});var M=u(function(I,w){
+var h=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),j=require('@stdlib/utils-inherit/dist'),z=require('@stdlib/strided-base-stride2offset/dist'),B=require('@stdlib/wasm-memory/dist'),E=require('@stdlib/wasm-base-arrays2ptrs/dist'),T=require('@stdlib/wasm-base-strided2object/dist'),c=v();function s(){return this instanceof s?(c.call(this,new B({initial:0})),this):new s}j(s,c);h(s.prototype,"main",function(r,t,i){return this.ndarray(r,t,i,z(r,i))});h(s.prototype,"ndarray",function(r,t,i,o){var p,a;return p=E(this,[T(r,t,i,o)]),a=p[0],c.prototype.ndarray.call(this,r,a.ptr,a.stride,a.offset)});w.exports=s
+});var _=u(function(J,x){
+var V=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),k=M(),C=v(),l=new k;l.initializeSync();V(l,"Module",C.bind(null));x.exports=l
+});var D=_();module.exports=D;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* WebAssembly routine to calculate the L2-norm of a single-precision floating-point vector.
-*
-* @module @stdlib/blas-base-wasm-snrm2
-*
-* @example
-* var Float32Array = require( '@stdlib/array-float32' );
-* var snrm2 = require( '@stdlib/blas-base-wasm-snrm2' );
-*
-* // Define a strided array:
-* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-*
-* // Perform operation:
-* var out = snrm2.main( x.length, x, 1 );
-* // returns ~7.42
-*
-* @example
-* var Float32Array = require( '@stdlib/array-float32' );
-* var snrm2 = require( '@stdlib/blas-base-wasm-snrm2' );
-*
-* // Define a strided array:
-* var x = new Float32Array( [ 1.0, 2.0, 3.0, 4.0, 5.0 ] );
-*
-* // Perform operation:
-* var out = snrm2.ndarray( x.length, x, 1, 0 );
-* // returns ~7.42
-*
-* @example
-* var Memory = require( '@stdlib/wasm-memory' );
-* var oneTo = require( '@stdlib/array-one-to' );
-* var snrm2 = require( '@stdlib/blas-base-wasm-snrm2' );
-*
-* // Create a new memory instance with an initial size of 10 pages (640KiB) and a maximum size of 100 pages (6.4MiB):
-* var mem = new Memory({
-*     'initial': 10,
-*     'maximum': 100
-* });
-*
-* // Create a BLAS routine:
-* var mod = new snrm2.Module( mem );
-* // returns <Module>
-*
-* // Initialize the routine:
-* mod.initializeSync();
-*
-* // Define a vector data type:
-* var dtype = 'float32';
-*
-* // Specify a vector length:
-* var N = 5;
-*
-* // Define a pointer (i.e., byte offset) for storing the input vector:
-* var xptr = 0;
-*
-* // Write vector values to module memory:
-* mod.write( xptr, oneTo( N, dtype ) );
-*
-* // Perform computation:
-* var out = mod.main( N, xptr, 1 );
-* // returns ~7.42
-*/
-
-// MODULES //
-
-var main = require( './main.js' );
-
-
-// EXPORTS //
-
-module.exports = main;
-
-// exports: { "Module": "main.Module" }
+//# sourceMappingURL=index.js.map
